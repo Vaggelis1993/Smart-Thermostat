@@ -16,11 +16,11 @@ GPIO.setup(RED_LED_PIN, GPIO.OUT)
 GPIO.output(RED_LED_PIN, GPIO.LOW)
 
 # MQTT settings
-MQTT_BROKER = "192.168.1.12" # Διεύθυνση του MQTT broker
-MQTT_PORT = 1883# Default port για MQTT
-MQTT_TOPIC = "home_status" # Topic για δημοσίευση μετρήσεων
+MQTT_BROKER = "192.168.1.12"           # Διεύθυνση του MQTT broker
+MQTT_PORT = 1883                       # Default port για MQTT
+MQTT_TOPIC = "home_status"             # Topic για δημοσίευση μετρήσεων
 MQTT_RECEIVE_TOPIC = "heating/control" # Topic για έλεγχο κατάστασης θέρμανσης
-DEVICE_ID = "rasp_zero_thermostat" # Αναγνωριστικό συσκευής
+DEVICE_ID = "rasp_zero_thermostat"     # Αναγνωριστικό συσκευής
 
 # Αρχικοποίηση αισθητήρα
 sensor = adafruit_dht.DHT21(board.D4)
